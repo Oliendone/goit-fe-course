@@ -16,7 +16,7 @@
   margin-top: 100px;
 }
 
-.container .menu li {
+ul li {
   display: inline-block;
   padding: 15px 65px;
   text-transform: uppercase;
