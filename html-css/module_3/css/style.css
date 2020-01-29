@@ -29,40 +29,51 @@ li:hover {
 }
 
 .wrapper {
-  display: block;
-  margin: 0 auto;
+  padding: 40px 25px;
+  margin: auto;
   margin-top: 40px;
   width: 470px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.wrapper .article_img {
-  display: block;
-  margin: auto;
-  padding-top: 40px;
-}
-
-.wrapper .wrapper_for_text {
-  display: block;
-  margin: auto;
-  padding-bottom: 40px;
+.wrapper_for_text {
   width: 420px;
   color: #626262;
 }
 
-.wrapper_for_text .article_tag {
+.article_tag {
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 32px;
+  color: #b4ad9e;
 }
 
-.wrapper_for_text .article_name {
+.article_name {
   font-size: 30px;
   margin-top: 20px;
   font-weight: bolder;
 }
 
-.wrapper_for_text .article_descr {
+.article_descr {
   margin-top: 32px;
+}
+
+.wrapper_for_two_artcls {
+  display: flex;
+  margin-left: auto;
+  padding: 40px 30px;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 960px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.festival_artcl {
+  display: inline-block;
+}
+
+.coffee_artcl {
+  display: inline-block;
+  margin-left: 60px;
 }
