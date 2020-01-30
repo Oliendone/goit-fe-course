@@ -60,13 +60,16 @@ li:hover {
 }
 
 .wrapper_for_two_artcls {
-  display: flex;
-  margin-left: auto;
+  display: block;
   padding: 40px 30px;
   margin: 0 auto;
   margin-top: 80px;
   width: 960px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.article_wrapper {
+  display: inline-block;
 }
 
 .festival_artcl {
@@ -75,5 +78,5 @@ li:hover {
 
 .coffee_artcl {
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 56px;
 }
