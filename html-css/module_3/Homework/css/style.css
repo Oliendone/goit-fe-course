@@ -43,6 +43,7 @@ main {
   display: inline-block;
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
+  font-weight: 300;
   font-size: 14px;
   color: #b4ad9e;
   text-decoration: none;
@@ -78,16 +79,14 @@ main article:nth-last-child(-n + 3) {
 }
 
 .button_load_more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 164px;
   height: 60px;
   border: solid 1px #626262;
   background-color: white;
-  margin: auto;
   cursor: pointer;
   font-size: 14px;
+  margin: 0 auto;
 }
 
 button:hover {
