@@ -90,6 +90,7 @@ nav {
 }
 .list_of_products li {
   list-style-type: none;
+  background-color: #323232;
 }
 
 .wrapper_for_img {
@@ -102,11 +103,9 @@ nav {
   display: inline-block;
   width: 254px;
   height: 40px;
-  background-color: #323232;
   display: inline-block;
   text-transform: uppercase;
-  line-height: 40px;
-  font-size: 18px;
+  line-height: 42px;
 }
 
 .wrapper_for_product_titles h3 {
@@ -124,7 +123,7 @@ nav {
   display: inline-block;
   width: 54px;
   height: 40px;
-  background-color: #8c8c8c;
+  background-color: rgba(255, 255, 255, 0.44);
   color: #ffffff;
   text-align: center;
 }
@@ -137,6 +136,10 @@ nav {
 
 .list_of_products li:nth-of-type(4n) {
   margin-right: 0;
+}
+
+.list_of_products li:hover {
+  background-color: #1abc9c;
 }
 /* products end */
 
@@ -184,6 +187,7 @@ nav {
   font-weight: 600;
   line-height: 26px;
   color: #555252;
+  letter-spacing: -0.36px;
 }
 
 .article_name::after {
@@ -200,6 +204,7 @@ nav {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
+  letter-spacing: -0.36px;
   color: #555252;
 }
 
