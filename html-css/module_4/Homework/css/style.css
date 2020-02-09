@@ -8,7 +8,7 @@
 
 /* header start*/
 nav {
-  margin-top: 36px;
+  padding-top: 36px;
 }
 
 .container {
@@ -54,7 +54,14 @@ nav {
   text-transform: uppercase;
   color: #0f0101;
   font-size: 14px;
-  margin-left: 32px;
+}
+
+.menu li {
+  margin-right: 32px;
+}
+
+.menu li:last-of-type {
+  margin-right: 0;
 }
 
 .menu li a:hover {
@@ -79,8 +86,7 @@ nav {
   width: 164px;
   height: 7px;
   background-color: #1abc9c;
-  margin: 0 auto;
-  margin-top: 34px;
+  margin: 34px auto 0;
 }
 /* products title end */
 
@@ -89,27 +95,32 @@ nav {
   margin-top: 92px;
 }
 .list_of_products li {
+  width: 255px;
   list-style-type: none;
   background-color: #323232;
+  float: left;
+  margin: 0 30px 30px 0;
+}
+
+.list_of_products li:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.list_of_products li:hover {
+  background-color: #1abc9c;
 }
 
 .wrapper_for_img {
-  width: 254px;
-  height: 282px;
   background-color: #e9f0fd;
 }
 
 .wrapper_for_product_titles {
-  display: inline-block;
-  width: 254px;
-  height: 40px;
-  display: inline-block;
   text-transform: uppercase;
-  line-height: 42px;
+  line-height: 40px;
 }
 
 .wrapper_for_product_titles h3 {
-  display: inline-block;
+  float: left;
 }
 
 .wrapper_for_product_titles h3 a {
@@ -120,30 +131,19 @@ nav {
 
 .cost {
   float: right;
-  display: inline-block;
   width: 54px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.44);
   color: #ffffff;
   text-align: center;
 }
-
-.list_of_products li {
-  float: left;
-  margin: 30px 30px 0 0;
-  cursor: pointer;
-}
-
-.list_of_products li:nth-of-type(4n) {
-  margin-right: 0;
-}
-
-.list_of_products li:hover {
-  background-color: #1abc9c;
-}
 /* products end */
 
 /* news start */
+.articles {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 .latest_news_title {
   margin-top: 105px;
   text-align: center;
@@ -165,19 +165,13 @@ nav {
 
 .wrapper_for_article {
   float: left;
-  display: inline-block;
   width: 346px;
-  margin: 81px 30px 0 0;
-  margin-bottom: 46px;
+  margin-right: 36px;
+  list-style: none;
 }
 
 .wrapper_for_article:nth-of-type(3n) {
   margin-right: 0;
-}
-
-.article_name,
-.article_text {
-  display: inline-block;
 }
 
 .article_name {
@@ -209,18 +203,20 @@ nav {
 }
 
 .button_read_more {
+  display: inline-block;
   margin-top: 16px;
   width: 159px;
   height: 51px;
   border-radius: 3px;
   background-color: rgb(78, 198, 171);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
-  border: none;
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
+  padding-top: 13px;
+  text-decoration: none;
   text-align: center;
   color: #ffffff;
-  cursor: pointer;
 }
+
 /* news end */
