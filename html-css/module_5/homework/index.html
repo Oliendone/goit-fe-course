@@ -33,21 +33,30 @@
     <!-- header end -->
     <main>
         <section class="slider">
-            <img class="slider_bg" src="./img/Background/slider_bg_image.jpg" alt="slider background image">
-            <div class="wrapper_for_slider_content">
-
+            <div id="overlay_slider">
+              <img class="slider_bg" src="./img/Background/slider_bg_image.jpg" alt="slider background image">
+            </div>
+            <div class="wrapper_for_slider_content container">
+              <div class="wrapper_for_slider_text">
+                <h2 class="slider_header">Affordable Paris Tourse</h2>
+                <p class="slider_header_description">
+            City Tours/ Tour Tickets/ Tour Guides</p>
+              </div>
+              <button class="left_arrow"></button>
+              <button class="right_arrow"></button>
             </div>
         </section>
       <!-- featured products start-->
-      <section class="container featured_products">
-        <h2 class="featured_products_title">New Collection</h2>
-        <ul class="list_of_products clearfix">
+      <section class="new_collection_section">
+        <div class="container">
+          <h2 class="new_collection_title">New Collection</h2>
+            <ul class="list_of_products clearfix">
           <li>
             <div class="wrapper_for_img">
               <a href="#"><img src="./img/Products/blue_shirt.png" alt="Blue Tshirt"/></a>
             </div>
-            <div class="wrapper_for_product_titles">
-              <h3><a href="#" class="clearfix">Blue Tshirt</a></h3>
+            <div class="wrapper_for_product_titles clearfix">
+              <h3><a href="#">Blue Tshirt</a></h3>
               <span class="cost">$26</span>
             </div>
           </li>
@@ -78,9 +87,14 @@
               <span class="cost">$56</span>
             </div>
           </li>
+        </div>
       </section>
       <!-- featured products end-->
-      
+      <footer>
+        <div class="footer">
+          <p class="footer_text">All Rights Reserved © Dokan | Designed <span class="designer_name">ThemenGraph</span></p>
+        </div> 
+      </footer>
     </main>
   </body>
 </html>
