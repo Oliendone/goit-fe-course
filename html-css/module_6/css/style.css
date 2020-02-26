@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+/* font-family: 'Montserrat', sent-serif;
+font-family: 'Roboto', sent-serif;
+font-family: 'Kaushan Script', sent-serif;
+*/
+
+:root {
+  --main_text_color: #333333;
+  --description_text_color: #999999;
+  --font_Kaushan_Script: "Kaushan Script", sent-serif;
+}
+
+.container {
+  width: 1201px;
+  margin: 0 auto;
+}
+
+/* menu end */
+header {
+  padding-top: 28px;
+}
+
+.logo {
+  color: #95e1d3;
+  font-size: 30px;
+  font-weight: 700;
+  height: 30px;
+  text-decoration: none;
+}
+
+.flex_wrapper_logo_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu_item {
+  height: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #95e1d3;
+  padding-right: 58px;
+}
+
+.menu_item:last-of-type {
+  padding-right: 0;
+}
+/* menu end */
+
+/* services start */
+
+.wrapper_header_services {
+  text-align: center;
+  padding-top: 112px;
+}
+
+.services_header {
+  color: var(--main_text_color);
+  display: block;
+  font-size: 30px;
+  height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services_header span {
+  font-family: var(--font_Kaushan_Script);
+  text-transform: none;
+  display: block;
+  font-size: 24px;
+  height: 24px;
+  padding-bottom: 22px;
+}
+
+.services_header::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 22px;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+}
+
+.wrapper_for_all_services {
+  margin-top: 66px;
+}
