@@ -196,13 +196,13 @@ header {
 
 /* team start */
 .wrapper_header_team {
-  width: 980px;
-  margin: 0 auto;
   text-align: center;
   padding-top: 92px;
 }
 
 .team_header {
+  margin: 0 auto;
+  max-width: 980px;
   color: var(--main_text_color);
   display: block;
   font-size: 30px;
@@ -229,6 +229,8 @@ header {
 }
 
 .team_description {
+  display: inline-block;
+  max-width: 980px;
   font-family: var(--font_Roboto);
   font-size: 15px;
   line-height: 24px;
@@ -242,6 +244,10 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
+}
+
+.wrapper_team_member {
+  width: 380px;
 }
 
 .member_name {
@@ -266,13 +272,15 @@ header {
 }
 
 .overlay_product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   opacity: 0;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
   background-image: linear-gradient(
     to top,
     rgba(252, 227, 138, 0.9),
@@ -299,18 +307,14 @@ header {
 }
 
 .social_icons {
-  position: absolute;
   display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .icon {
+  display: block;
   background-color: #fce38a;
   width: 56px;
   height: 56px;
-  border: none;
   margin-right: 1px;
   transition: background-color 0.2s linear;
 }
