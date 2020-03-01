@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* connecting fonts start */
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("../fonts/montserrat-v14-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/Roboto/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/Roboto/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/Dancing/dancing-script-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/Dancing/dancing-script-v14-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Shrikhand Regular"), local("Shrikhand-Regular"),
+    url("../fonts/Shrikhand/shrikhand-v5-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/Shrikhand/shrikhand-v5-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* connecting fonts end */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+:root {
+  --addition_text_color: #fed136;
+  --main_text_color: #222222;
+  --description_text_color: #777777;
+  --font_Montserrat: "Montserrat", sans-serif;
+  --font_Roboto: "Roboto Slab", sans-serif;
+  --font_Shrikhand: "Shrikhand", sans-serif;
+  --font_Dancing: "Dancing Script", sans-serif;
+}
+
+/* navigation menu start */
+
+header {
+  padding-top: 28px;
+}
+
+.logo {
+  font-family: var(--font_Shrikhand);
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 41px;
+  color: var(--addition_text_color);
+}
+
+.flex_wrapper_logo_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  font-family: var(--font_Montserrat);
+  display: flex;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+.menu_item a {
+  list-style-type: none;
+  height: 14px;
+  font-size: 14px;
+  list-style-type: none;
+  display: inline-block;
+  color: var(--main_text_color);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+.menu_item a:hover {
+  color: var(--addition_text_color);
+}
+
+.menu li {
+  margin-right: 40px;
+}
+
+.menu li:last-of-type {
+  margin-right: 0;
+}
+
+/* navigation menu end */
+
+/* service start */
+.wrapper_header_services {
+  text-align: center;
+  padding-top: 128px;
+}
+
+.services_header {
+  color: var(--main_text_color);
+  font-family: var(--font_Montserrat);
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service_header_description {
+  margin-top: 5px;
+  font-family: var(--font_Dancing);
+  font-size: 20px;
+
+  color: var(--description_text_color);
+}
+
+.wrapper_for_all_services {
+  margin-top: 66px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  text-align: center;
+}
+
+.service_name {
+  text-transform: uppercase;
+  font-family: var(--font_Montserrat);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--main_text_color);
+}
+
+.service_descriprion {
+  margin-top: 10px;
+  font-family: var(--font_Roboto);
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--description_text_color);
+}
+
+.wrapper_for_service {
+  position: relative;
+  width: 313px;
+}
+
+.wrapper_for_service::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: solid 3px #fed136;
+}
+
+.wrapper_for_service:nth-of-type(1)::before {
+  content: url("");
+  background-image: url("../icons/Icon-Basket.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper_for_service:nth-of-type(2)::before {
+  content: url("");
+  background-image: url("../icons/Icon-Laptop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper_for_service:nth-of-type(3)::before {
+  content: url("");
+  background-image: url("../icons/Icon-Locked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* service end */
+
+/* footer start */
+footer {
+  padding-top: 120px;
+}
+
+.wrapper_contacts {
+  height: 676px;
+  background-color: var(--main_text_color);
+}
+
+.wrapper_contact_us {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.contact_us_header {
+  color: #ffffff;
+  font-family: var(--font_Montserrat);
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact_us_header_description {
+  margin-top: 5px;
+  font-family: var(--font_Dancing);
+  font-size: 20px;
+  color: var(--description_text_color);
+}
+/* footer end */
