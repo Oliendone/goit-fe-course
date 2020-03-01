@@ -215,17 +215,17 @@ header {
 
 /* footer start */
 footer {
-  padding-top: 120px;
-}
-
-.wrapper_contacts {
+  margin-top: 120px;
   height: 676px;
   background-color: var(--main_text_color);
+  background-image: url("../img/Map_img.png");
+  background-repeat: no-repeat;
+  background-position: 788px 120px;
 }
 
 .wrapper_contact_us {
+  padding-top: 110px;
   text-align: center;
-  margin-top: 110px;
 }
 
 .contact_us_header {
