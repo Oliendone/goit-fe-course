@@ -55,14 +55,23 @@
           </div>
     </main>
     <footer>
-        
-                <div class="wrapper_contact_us">
-                    <h2 class="contact_us_header">
-                      Contact Us
-                    </h2>
-                    <p class="contact_us_header_description">Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="container">
+            <div class="wrapper_contact_us">
+                <h2 class="contact_us_header">
+                    Contact Us
+                </h2>
+                <p class="contact_us_header_description">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <form action="#" class="send_message_form">
+                <div class="wrapper_for_inputs">
+                    <input type="text" name="name" placeholder="your name*" class="input_form name" required>
+                    <input type="email" name="email" placeholder="your e-mail*" class="input_form email" required>
+                    <input type="text" name="subject" placeholder="subject" class="input_form">
+                    <textarea name="message" id="" cols="30" rows="10"  placeholder="your message*" class="input_form message_form" required ></textarea>
                 </div>
-           
+                <button type="submit" class="send_message_button">Send message</button>
+            </form>
+        </div>
     </footer>
   </body>
 </html>

@@ -220,7 +220,7 @@ footer {
   background-color: var(--main_text_color);
   background-image: url("../img/Map_img.png");
   background-repeat: no-repeat;
-  background-position: 788px 120px;
+  background-position: 740px 120px;
 }
 
 .wrapper_contact_us {
@@ -242,5 +242,74 @@ footer {
   font-family: var(--font_Dancing);
   font-size: 20px;
   color: var(--description_text_color);
+}
+
+.send_message_form {
+  margin-top: 76px;
+}
+
+.wrapper_for_inputs {
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.wrapper_for_inputs input:nth-last-of-type(n + 2) {
+  margin-bottom: 30px;
+}
+.input_form {
+  padding-left: 20px;
+  width: 455px;
+  height: 51px;
+  border: solid 1px #cccccc;
+  background-color: #ffffff;
+}
+
+.message_form {
+  width: calc(50%-15px);
+  height: 100%;
+  border: solid 1px #cccccc;
+  background-color: #ffffff;
+  padding-top: 12px;
+  resize: none;
+}
+
+.send_message_button {
+  display: block;
+  width: 240px;
+  height: 66px;
+  border-radius: 3px;
+  background-color: #fed136;
+  font-family: var(--font_Montserrat);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.input_form::placeholder {
+  font-family: var(--font_Montserrat);
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+.name:valid,
+.email:valid,
+.message_form:valid {
+  outline-color: green;
+}
+
+.name:invalid,
+.email:invalid,
+.message_form:invalid {
+  outline-color: red;
 }
 /* footer end */
