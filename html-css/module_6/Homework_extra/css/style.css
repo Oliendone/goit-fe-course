@@ -1,0 +1,56 @@
+body {
+  padding: 100px;
+}
+
+.wrapper_article {
+  width: 250px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease-out;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper_article:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.wrapper_article p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.like_button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: width 0.2s ease-in-out;
+}
+
+.like_button:hover {
+  width: 100%;
+}
+
+.image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.image:hover {
+  transform: rotate(5deg);
+}
+
+.name {
+  font-size: 25 px;
+  transition: font-size 0.2s linear, color 0.3s ease-in;
+}
+
+.name:hover {
+  font-size: calc(12 * 15%);
+  color: brown;
+}
