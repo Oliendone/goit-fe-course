@@ -1,4 +1,26 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper_for_holiday_section {
+  height: 540px;
+  background-color: #1a1915;
+}
+
+.header_bg_image {
+  display: block;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  background-clip: padding-box;
 }
