@@ -33,6 +33,7 @@
 .description {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  color: #666666;
 }
 
 /* holiday partner header start*/
@@ -131,9 +132,116 @@
 /* holiday partners main start*/
 .holiday_partners {
   text-align: center;
+  color: #333333;
+  padding-top: 66px;
 }
 
 .partners_header {
   font-size: 22px;
+}
+
+.wrapper_for_partners {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.partner {
+  display: inline-block;
+  margin-bottom: 30px;
+  width: 218px;
+}
+
+.partner h4 {
+  margin: 20px 0 16px 0;
+  font-size: 14px;
+}
+
+.partner p {
+  font-size: 14px;
+}
+
+.partner:last-of-type {
+  margin-bottom: 0;
+}
+
+.partner_img {
+  border-radius: 50%;
+}
+
+.partner_img_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.bradley::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: solid 4px #ffffff;
+  background-color: #ff4e50;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../icons/TV_icon.png");
+  background-repeat: no-repeat;
+  background-position: 9px 7px;
+}
+
+.lucas::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: solid 4px #ffffff;
+  background-color: #ffa507;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../icons/alchemy_icon.png");
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+}
+
+.heather::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: solid 4px #ffffff;
+  background-color: #1cd7ad;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../icons/coffee_cup_icon.png");
+  background-repeat: no-repeat;
+  background-position: 9px 7px;
+}
+
+.hunter::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: solid 4px #ffffff;
+  background-color: #4e73db;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../icons/papper_plane_icon.png");
+  background-repeat: no-repeat;
+  background-position: 7px 8px;
+}
+
+.other_partners {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 2px #ff4e50;
+  background-color: #ffffff;
+  color: #ff4e50;
+  font-size: 14px;
+  margin: 30px 0 50px 0;
+  cursor: pointer;
 }
 /* holiday partners main end*/
