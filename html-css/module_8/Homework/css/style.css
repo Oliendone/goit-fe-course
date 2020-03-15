@@ -26,7 +26,6 @@
 
 .container {
   width: 320px;
-  padding: 0 14px;
   margin: 0 auto;
 }
 
@@ -126,6 +125,12 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.find_partner_button:hover {
+  background-color: #fff;
+  color: #ff4e50;
 }
 /* holiday partner header ends*/
 
@@ -143,12 +148,9 @@
 .wrapper_for_partners {
   margin-top: 15px;
   text-align: center;
-}
-
-.partner {
-  display: inline-block;
-  margin-bottom: 30px;
-  width: 218px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .partner h4 {
@@ -158,10 +160,6 @@
 
 .partner p {
   font-size: 14px;
-}
-
-.partner:last-of-type {
-  margin-bottom: 0;
 }
 
 .partner_img {
@@ -243,5 +241,11 @@
   font-size: 14px;
   margin: 30px 0 50px 0;
   cursor: pointer;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.other_partners:hover {
+  background-color: #ff4e50;
+  color: #fff;
 }
 /* holiday partners main end*/
