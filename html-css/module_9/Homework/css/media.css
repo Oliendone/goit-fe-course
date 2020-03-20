@@ -1,0 +1,119 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .partner {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 218px;
+  }
+
+  .partner:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .partner:nth-of-type(2) {
+    order: 1;
+  }
+
+  .partner:nth-of-type(4) {
+    order: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .project_name {
+    margin-top: 0;
+  }
+
+  .wrapper_for_holiday_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+  }
+
+  .account_manage {
+    order: 2;
+  }
+
+  .holiday_partner_wrapper {
+    min-height: 700px;
+    padding: 57px 0;
+  }
+
+  .find_partner_block {
+    margin: 0 auto;
+    width: 492px;
+    margin-top: 124px;
+  }
+
+  .share_dreams_text {
+    font-size: 50px;
+  }
+
+  .share_dreams_text + p {
+    margin: 32px 0 34px 0;
+    font-size: 24px;
+  }
+
+  .find_partner_button {
+    width: 226px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .wrapper_for_partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+
+  .partner {
+    width: 236px;
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+
+  .other_partners {
+    width: 192px;
+    height: 40px;
+    font-size: 14px;
+    margin: 36px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 941px) {
+  .container {
+    width: 767px;
+    padding: 0 14px;
+    margin: 0 auto;
+  }
+
+  .wrapper_for_holiday_section {
+    width: 660px;
+  }
+
+  .holiday_partners {
+    width: 492px;
+    margin: 0 auto;
+  }
+
+  .partner:not(:nth-last-of-type(-n + 2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 942px) {
+  .container {
+    width: 942px;
+    margin: 0 auto;
+  }
+
+  .partner {
+    width: 220px;
+  }
+}

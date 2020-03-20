@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #666666;
+}
+
+/* holiday partner header start*/
+
+.holiday_partner_wrapper {
+  position: relative;
+  min-height: 540px;
+  background-image: url("../img/header_bg_image.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #1a1915;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header_bg_image {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.account_manage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account_manage li {
+  display: inline-block;
+  text-align: center;
+}
+
+.autorizhation_button {
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+}
+
+.log_in {
+  margin-right: 20px;
+}
+
+.sign_up {
+  padding: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(26, 25, 21, 0);
+  width: 94px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.project_name {
+  margin-top: 115px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.project_name a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.find_partner_block {
+  margin-top: 24px;
+}
+
+.share_dreams_text {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.share_dreams_text + p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  margin: 20px 38px;
+}
+
+.find_partner_button {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.find_partner_button:hover {
+  background-color: #fff;
+  color: #ff4e50;
+}
+/* holiday partner header ends*/
+
+/* holiday partners main start*/
+.holiday_partners {
+  text-align: center;
+  color: #333333;
+  padding-top: 66px;
+}
+
+.partners_header {
+  font-size: 22px;
+}
+
+.wrapper_for_partners {
+  margin-top: 15px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner h4 {
+  margin: 20px 0 16px 0;
+  font-size: 14px;
+}
+
+.partner p {
+  font-size: 14px;
+}
+
+.partner_img {
+  border-radius: 50%;
+}
+
+.partner_img_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.bradley::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: solid 4px #ffffff;
+  background-color: #ff4e50;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../icons/TV_icon.png");
+  background-repeat: no-repeat;
+  background-position: 9px 7px;
+}
+
+.lucas::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: solid 4px #ffffff;
+  background-color: #ffa507;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../icons/alchemy_icon.png");
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+}
+
+.heather::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: solid 4px #ffffff;
+  background-color: #1cd7ad;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../icons/coffee_cup_icon.png");
+  background-repeat: no-repeat;
+  background-position: 9px 7px;
+}
+
+.hunter::after {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border: solid 4px #ffffff;
+  background-color: #4e73db;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../icons/papper_plane_icon.png");
+  background-repeat: no-repeat;
+  background-position: 7px 8px;
+}
+
+.other_partners {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 2px #ff4e50;
+  background-color: #ffffff;
+  color: #ff4e50;
+  font-size: 14px;
+  margin: 30px 0 50px 0;
+  cursor: pointer;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.other_partners:hover {
+  background-color: #ff4e50;
+  color: #fff;
+}
+/* holiday partners main end*/
