@@ -22,11 +22,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   list-style: none;
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
+  font-weight: 700;
 }
 
 .description {
@@ -38,14 +34,12 @@
 /* holiday partner header start*/
 
 .holiday_partner_wrapper {
-  position: relative;
   min-height: 540px;
   background-image: url("../img/header_bg_image.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-color: #1a1915;
-  text-align: center;
   padding: 20px 0;
 }
 
@@ -53,12 +47,6 @@
   display: block;
   position: relative;
   width: 100%;
-}
-
-.account_manage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .account_manage li {
@@ -101,23 +89,24 @@
 
 .find_partner_block {
   margin-top: 24px;
+  text-align: center;
 }
 
 .share_dreams_text {
-  font-size: 30px;
+  font-size: 29px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .share_dreams_text + p {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 300;
   color: #fff;
-  margin: 20px 38px;
+  margin: 20px 0 20px 0;
 }
 
 .find_partner_button {
-  width: 280px;
+  width: 100%;
   height: 40px;
   border-radius: 20px;
   background-color: #ff4e50;
