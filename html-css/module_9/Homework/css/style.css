@@ -77,7 +77,6 @@
 }
 
 .project_name {
-  margin-top: 115px;
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -163,8 +162,8 @@
 .bradley::after {
   position: absolute;
   content: "";
-  width: 33px;
-  height: 33px;
+  width: 36px;
+  height: 36px;
   border: solid 4px #ffffff;
   background-color: #ff4e50;
   border-radius: 50%;
@@ -172,14 +171,14 @@
   right: 0;
   background-image: url("../icons/TV_icon.png");
   background-repeat: no-repeat;
-  background-position: 9px 7px;
+  background-position: center;
 }
 
 .lucas::after {
   position: absolute;
   content: "";
-  width: 33px;
-  height: 33px;
+  width: 36px;
+  height: 36px;
   border: solid 4px #ffffff;
   background-color: #ffa507;
   border-radius: 50%;
@@ -187,14 +186,14 @@
   right: 0;
   background-image: url("../icons/alchemy_icon.png");
   background-repeat: no-repeat;
-  background-position: 10px 8px;
+  background-position: center;
 }
 
 .heather::after {
   position: absolute;
   content: "";
-  width: 33px;
-  height: 33px;
+  width: 36px;
+  height: 36px;
   border: solid 4px #ffffff;
   background-color: #1cd7ad;
   border-radius: 50%;
@@ -202,14 +201,14 @@
   right: 0;
   background-image: url("../icons/coffee_cup_icon.png");
   background-repeat: no-repeat;
-  background-position: 9px 7px;
+  background-position: center;
 }
 
 .hunter::after {
   position: absolute;
   content: "";
-  width: 33px;
-  height: 33px;
+  width: 36px;
+  height: 36px;
   border: solid 4px #ffffff;
   background-color: #4e73db;
   border-radius: 50%;
@@ -217,11 +216,11 @@
   right: 0;
   background-image: url("../icons/papper_plane_icon.png");
   background-repeat: no-repeat;
-  background-position: 7px 8px;
+  background-position: center;
 }
 
-.other_partners {
-  width: 280px;
+.other_partners_button {
+  width: 100%;
   height: 40px;
   border-radius: 20px;
   border: solid 2px #ff4e50;
@@ -233,7 +232,7 @@
   transition: background-color 0.2s linear, color 0.2s linear;
 }
 
-.other_partners:hover {
+.other_partners_button:hover {
   background-color: #ff4e50;
   color: #fff;
 }

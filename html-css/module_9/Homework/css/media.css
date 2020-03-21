@@ -1,8 +1,11 @@
 @media (min-width: 320px) and (max-width: 767px) {
+  .project_name {
+    margin-top: 115px;
+  }
+
   .partner {
     display: inline-block;
     margin-bottom: 30px;
-    width: 218px;
   }
 
   .partner:last-of-type {
@@ -23,17 +26,6 @@
     margin-top: 0;
   }
 
-  .wrapper_for_holiday_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .account_manage {
-    order: 2;
-  }
-
   .holiday_partner_wrapper {
     min-height: 700px;
     padding: 57px 0;
@@ -41,7 +33,6 @@
 
   .find_partner_block {
     margin: 0 auto;
-    width: 492px;
     margin-top: 124px;
   }
 
@@ -73,7 +64,7 @@
     margin-bottom: 0;
   }
 
-  .other_partners {
+  .other_partners_button {
     width: 192px;
     height: 40px;
     font-size: 14px;
@@ -82,14 +73,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 941px) {
-  .wrapper_for_holiday_section {
+  /* .wrapper_for_holiday_section {
     width: 660px;
   }
 
   .holiday_partners {
     width: 492px;
     margin: 0 auto;
-  }
+  } */
 
   .partner:not(:nth-last-of-type(-n + 2)) {
     margin-bottom: 40px;
