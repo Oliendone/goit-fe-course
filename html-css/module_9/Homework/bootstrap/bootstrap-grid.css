@@ -39,9 +39,9 @@ html {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 942px) {
   .container {
-    max-width: 992px;
+    max-width: 942px;
   }
 }
 

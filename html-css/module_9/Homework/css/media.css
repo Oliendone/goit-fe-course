@@ -37,7 +37,7 @@
   }
 
   .share_dreams_text {
-    font-size: 50px;
+    font-size: 47px;
   }
 
   .share_dreams_text + p {
@@ -73,22 +73,22 @@
 }
 
 @media (min-width: 768px) and (max-width: 941px) {
-  /* .wrapper_for_holiday_section {
-    width: 660px;
+  .partner[class*="col-"]:nth-of-type(-2n + 3) {
+    margin-right: 30px;
   }
-
-  .holiday_partners {
-    width: 492px;
-    margin: 0 auto;
-  } */
 
   .partner:not(:nth-last-of-type(-n + 2)) {
     margin-bottom: 40px;
+    text-align: center;
   }
 }
 
 @media (min-width: 942px) {
   .partner {
     width: 220px;
+  }
+
+  .share_dreams_text {
+    font-size: 44px;
   }
 }
