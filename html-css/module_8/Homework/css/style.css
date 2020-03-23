@@ -71,21 +71,17 @@
   color: #ffffff;
   border: none;
   text-decoration: none;
+  background: none;
+  width: 94px;
+  height: 40px;
+  transition: border 0.2s ease-in;
 }
 
-.log_in {
-  margin-right: 20px;
-}
-
-.sign_up {
-  padding: 8px;
+.autorizhation_button:hover {
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 255, 255);
-  background-color: rgba(26, 25, 21, 0);
-  width: 94px;
-  height: 40px;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 .project_name {
