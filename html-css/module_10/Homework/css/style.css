@@ -453,6 +453,7 @@ font-size: 14px;
 line-height: 17px;
 font-family: var(--font-main);
 font-weight: 700;
+text-transform: uppercase;
 color: var(--intro-main-color);
 background-color: var(--stylish-color-cyan);
 }
