@@ -1,7 +1,109 @@
-* {
-list-style-type: none;
+:root {
+   --intro-main-color: #fff;
+   --font-main: 'Montserrat', sans-serif;
+   --description-font: 'Roboto', sans-serif;
+   --cursive-font: 'Kaushan Script', cursive;
+   --gradient: to top, rgba(252, 227, 136, 0.902), rgba(243, 129, 129, 0.902);
+   --color-main: #333333;
+   --description-color: #999999;
+   --stylish-color-cyan: #95E1D3;
+   --stylish-color-yellow: #FCE38A;
+   --stylish-color-red: #F38181;
 }
 
-font-family: 'Roboto', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Kaushan Script', cursive;
+.container {
+   width: 1200px;
+   margin: 0 auto;
+}
+
+.link {
+   text-decoration: none;
+   color: var(--intro-main-color);
+}
+
+.list {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
+.button {
+   border: none;
+   cursor: pointer;
+}
+
+.section-background-image {
+   height: 1000px;
+   background: linear-gradient(var(--gradient)), url('../img/slider_bg_image-min.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.section-introducing {
+   padding-top: 15px;
+   color: var(--intro-main-color);
+   font-family: var(--font-main);
+}
+
+.site-header {
+ display: flex;
+ justify-content: space-between;  
+ align-items: center;
+}
+
+.site-logo {
+   font-size: 30px;
+   line-height: 37px;
+   font-weight: 700;
+}
+
+.site-navigation__list {
+   display: flex;
+   align-items: center;
+}
+
+.site-navigation__item:not(:last-of-type) {
+   margin-right: 30px;
+}
+
+.site-navigation__icon {
+   fill: #fff;
+}
+
+.site-navigation__link--hover:hover .site-navigation__icon {
+   fill: var(--stylish-color-yellow);
+}
+
+.section-title {
+      width: 818px;
+      margin: 0 auto;
+      margin-top: 182px;
+      text-align: center;
+}
+
+.section-title-main__text--main {
+   font-family: var(--font-main);
+   font-size: 150px;
+   line-height: 140px;
+   text-transform: uppercase;
+   display: block;
+}
+
+.section-title-main__text--pre {
+   font-family: var(--cursive-font);
+   font-size: 72px;
+   line-height: 104px;
+}
+
+.section-title__button {
+   margin-top: 55px;
+   width: 163px;
+   height: 43px;
+   background: none;
+   border: 3px solid var(--intro-main-color);
+   color: var(--intro-main-color);
+   font-size: 14px;
+   line-height: 17px;
+   font-family: var(--font-main);
+   text-transform: uppercase;
+}

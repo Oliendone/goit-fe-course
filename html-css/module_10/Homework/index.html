@@ -9,26 +9,26 @@
     <title>Homework 10</title>
 </head>
 <body>
+  <div class="section-background-image">
     <div class="container">
-        <div class="background_image">
-            <section class="introducing">
-                <header class="header">
-                    <a href="#" class="site-logo">MoGo</a>
-                    <nav class="nav">
-                        <ul class="site-navigation">
-                        <li class="site-navigation__item"><a href="#" class="site-navigation__link">About</a></li>
-                        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Service</a></li>
-                        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Block</a></li>
-                        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Work</a></li>
-                        <li class="site-navigation__item"><a href="#" class="site-navigation__link">Contact</a></li>
-                        <li class="site-navigation__item"><a href="#" class="site-navigation__link"><svg width="30px" height="30px"><use href="icons/navigation_icons/bag.svg#bag_icon"></use></svg></a></li>
-                        <li class="site-navigation__item"><a href="#" class="site-navigation__link"><svg width="30px" height="30px"><use href="icons/navigation_icons/search.svg#search_icon"></use></svg></a></li>
+            <section class="section-introducing">
+                <header class="site-header">
+                    <a href="#" class="link site-logo header-hover">MoGo</a>
+                    <nav class="site-navigation">
+                        <ul class="list site-navigation__list">
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover">About</a></li>
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover">Service</a></li>
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover">Block</a></li>
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover">Work</a></li>
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover">Contact</a></li>
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover"><svg class="site-navigation__icon "width="20px" height="17px"><use href="icons/navigation_icons/bag.svg#bag_icon"></use></svg></a></li>
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover"><svg class="site-navigation__icon "width="20px" height="20px"><use href="icons/navigation_icons/search.svg#search_icon"></use></svg></a></li>
                         </ul>       
                     </nav>
                 </header>
-                <div class="section-header">
-                    <h1 class="section-header__text--main"><span class="section-header__pre-text--main">Creative Template</span>Welcome To Mogo</h1>
-                    <button class="section-header__button">Learn More</button>
+                <div class="section-title">
+                    <h1 class="section-title-main__text--pre">Creative Template<span class="section-title-main__text--main">Welcome To Mogo</span></h1>
+                    <button class="button section-title__button">Learn More</button>
                 </div>
             </section>
         </div>
@@ -36,37 +36,39 @@
 <main>
     <div class="container">
         <section class="section-services">
-            <h2 class="section-header__text"><span class="section-header__pre-text">We work with</span>Amazing Services</h2>
-             <ul class="services">
-                 <li class="services__example">
-                     <h3 class="services__name">Photography</h3>
-                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ipsa?</p>
+          <div class="section-header"> 
+            <h2 class="section-header__text--pre">We work with<span class="section-header__text--main">Amazing Services</span></h2>
+          </div> 
+             <ul class="list services__list">
+                 <li class="services__item services__item-icon">
+                     <h3 class="services__title">Photography</h3>
+                     <p class="services-text description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ipsa?</p>
                  </li>
-                 <li class="services__example">
-                     <h3 class="services__name">Web Design</h3>
-                     <p class="description">Ipsum sunt nisi iusto minima consectetur porro nemo quia asperiores!</p>
+                 <li class="services__item services__item-icon">
+                     <h3 class="services__title">Web Design</h3>
+                     <p class="services-text description">Ipsum sunt nisi iusto minima consectetur porro nemo quia asperiores!</p>
+                 </li> 
+                 <li class="services__item services__item-icon">
+                     <h3 class="services__title">Creativity</h3>
+                     <p class="services-text description">Quam, saepe! Porro possimus consectetur, voluptatem soluta aliquid explicabo sint.</p>
                  </li>
-                 <li class="services__example">
-                     <h3 class="services__name">Creativity</h3>
-                     <p class="description">Quam, saepe! Porro possimus consectetur, voluptatem soluta aliquid explicabo sint.</p>
+                 <li class="services__item services__item-icon">
+                     <h3 class="services__title">Seo</h3>
+                     <p class="services-text description">Quas alias dolores facere vitae magnam fugit cupiditate labore ducimus?</p>
                  </li>
-                 <li class="services__example">
-                     <h3 class="services__name">Seo</h3>
-                     <p class="description">Quas alias dolores facere vitae magnam fugit cupiditate labore ducimus?</p>
+                 <li class="services__item services__item-icon">
+                     <h3 class="services__title">Css/Html</h3>
+                     <p class="services-text description">Laudantium tempora suscipit cum et architecto eligendi sed maxime dolores!</p>
                  </li>
-                 <li class="services__example">
-                     <h3 class="services__name">Css/Html</h3>
-                     <p class="description">Laudantium tempora suscipit cum et architecto eligendi sed maxime dolores!</p>
-                 </li>
-                 <li class="services__example">
-                     <h3 class="services__name">Digital</h3>
-                     <p class="description">Dolores eveniet repellat eaque eligendi laboriosam nesciunt dolorem id voluptatibus!</p>
+                 <li class="services__item services__item-icon">
+                     <h3 class="services__title">Digital</h3>
+                     <p class="services-text description">Dolores eveniet repellat eaque eligendi laboriosam nesciunt dolorem id voluptatibus!</p>
                  </li>
              </ul>
         </section>
-        <section class="team">
-            <div class="team-header-wrapper">
-                <h2 class="section-header__text"><span class="section-header__pre-text">Who we are</span>Meet Our Team</h2>
+        <section class="section-team">
+            <div class="section-header">
+                <h2 class="section-header__text--pre">Who we are<span class="section-header__text--main">Meet Our Team</span></h2>
                 <p class="team_description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Obcaecati nostrum, facilis repudiandae ut sunt repellendus id quis
@@ -74,42 +76,42 @@
                   adipisci tempore distinctio officiis?
                 </p>
             </div>
-            <div class="wrapper-all-team">
-              <div class="wrapper-team-member">
-                <div class="wrapper-img-overlay">
-                <img src="./img/first_img.jpg" alt="" class="wrapper-img-overlay__image" />
-                <div class="wrapper-overlay">
-                  <ul class="social-icons">
-                    <li class="social-icons__element">
-                      <a href="#" class="social-icons__facebook">
-                        <svg>
+            <div class="all-team">
+              <div class="team-member">
+                <div class="img-overlay">
+                <img src="./img/first_img.jpg" alt="" class="img-overlay__image" />
+                <div class="overlay">
+                  <ul class="list socials">
+                    <li class="socials__item">
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon">
                           <use href="">
                           
                           </use>
                         </svg>
                       </a>
                     </li>
-                    <li class="social-icons__element">
-                      <a href="#" class="social-icons__twitter">
-                        <svg>
+                    <li class="socials__item">
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon">
                           <use href="">
                           
                           </use>
                         </svg>
                       </a>
                     </li>
-                    <li class="social-icons__element">
-                      <a href="#" class="social-icons__pinterest">
-                        <svg>
+                    <li class="socials__item">
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon">
                           <use href="">
                           
                           </use>
                         </svg>
                       </a>
                     </li>
-                    <li class="social-icons__element">
-                      <a href="#" class="social-icons__facebook">
-                        <svg>
+                    <li class="socials__item">
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon">
                           <use href="">
                           
                           </use>
@@ -124,41 +126,41 @@
                 <h4 class="member-information__position">Graphic Design</h4>
               </div>
             </div>
-            <div class="wrapper-team-member">
-              <div class="wrapper-img-overlay">
-              <img src="./img/first_img.jpg" alt="" class="wrapper-img-overlay__image" />
-              <div class="wrapper-overlay">
-                <ul class="social-icons">
-                  <li class="social-icons__element">
-                    <a href="#" class="social-icons__facebook">
-                      <svg>
+            <div class="team-member">
+              <div class="img-overlay">
+              <img src="./img/first_img.jpg" alt="" class="img-overlay__image" />
+              <div class="overlay">
+                <ul class="list socials">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <svg class="socials__icon">
                         <use href="">
                         
                         </use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icons__element">
-                    <a href="#" class="social-icons__twitter">
-                      <svg>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <svg class="socials__icon">
                         <use href="">
                         
                         </use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icons__element">
-                    <a href="#" class="social-icons__pinterest">
-                      <svg>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <svg class="socials__icon">
                         <use href="">
                         
                         </use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icons__element">
-                    <a href="#" class="social-icons__facebook">
-                      <svg>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <svg class="socials__icon">
                         <use href="">
                         
                         </use>
@@ -173,41 +175,41 @@
               <h4 class="member-information__position">Graphic Design</h4>
             </div>
           </div>
-          <div class="wrapper-team-member">
-            <div class="wrapper-img-overlay">
-            <img src="./img/first_img.jpg" alt="" class="wrapper-img-overlay__image" />
-            <div class="wrapper-overlay">
-              <ul class="social-icons">
-                <li class="social-icons__element">
-                  <a href="#" class="social-icons__facebook">
-                    <svg>
+          <div class="team-member">
+            <div class="img-overlay">
+            <img src="./img/first_img.jpg" alt="" class="img-overlay__image" />
+            <div class="overlay">
+              <ul class="list socials">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
                       <use href="">
                       
                       </use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-icons__element">
-                  <a href="#" class="social-icons__twitter">
-                    <svg>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
                       <use href="">
                       
                       </use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-icons__element">
-                  <a href="#" class="social-icons__pinterest">
-                    <svg>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
                       <use href="">
                       
                       </use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-icons__element">
-                  <a href="#" class="social-icons__facebook">
-                    <svg>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
                       <use href="">
                       
                       </use>
@@ -222,41 +224,41 @@
             <h4 class="member-information__position">Graphic Design</h4>
           </div>
         </div>
-        <div class="wrapper-team-member">
-          <div class="wrapper-img-overlay">
-          <img src="./img/first_img.jpg" alt="" class="wrapper-img-overlay__image" />
-          <div class="wrapper-overlay">
-            <ul class="social-icons">
-              <li class="social-icons__element">
-                <a href="#" class="social-icons__facebook">
-                  <svg>
+        <div class="team-member">
+          <div class="img-overlay">
+          <img src="./img/first_img.jpg" alt="" class="img-overlay__image" />
+          <div class="overlay">
+            <ul class="list socials">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__icon">
                     <use href="">
                     
                     </use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icons__element">
-                <a href="#" class="social-icons__twitter">
-                  <svg>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__icon">
                     <use href="">
                     
                     </use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icons__element">
-                <a href="#" class="social-icons__pinterest">
-                  <svg>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__icon">
                     <use href="">
                     
                     </use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icons__element">
-                <a href="#" class="social-icons__facebook">
-                  <svg>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__icon">
                     <use href="">
                     
                     </use>
@@ -285,7 +287,7 @@
                     placeholder="Your Email..."
                     class="email_form"
                   />
-                  <button type="submit" class="footer-form__button">Subcrcibe</button>
+                  <button type="button submit" class="footer-form__button">Subcrcibe</button>
                 </form>
               </div>
             </div>
