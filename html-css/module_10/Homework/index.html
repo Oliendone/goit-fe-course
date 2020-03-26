@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:500,700|Roboto:300i,400&display=swap" rel="stylesheet">
     <title>Homework 10</title>
 </head>
 <body>
@@ -21,8 +21,8 @@
                           <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover">Block</a></li>
                           <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover">Work</a></li>
                           <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover">Contact</a></li>
-                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover"><svg class="site-navigation__icon "width="20px" height="17px"><use href="icons/navigation_icons/bag.svg#bag_icon"></use></svg></a></li>
-                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link site-navigation__link--hover"><svg class="site-navigation__icon "width="20px" height="20px"><use href="icons/navigation_icons/search.svg#search_icon"></use></svg></a></li>
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link "><svg class="site-navigation__icon "width="20px" height="17px"><use href="icons/navigation_icons/bag.svg#bag_icon"></use></svg></a></li>
+                          <li class="site-navigation__item"><a href="#" class="link site-navigation__link "><svg class="site-navigation__icon "width="20px" height="20px"><use href="icons/navigation_icons/search.svg#search_icon"></use></svg></a></li>
                         </ul>       
                     </nav>
                 </header>
@@ -79,13 +79,18 @@
             <div class="all-team">
               <div class="team-member">
                 <div class="img-overlay">
-                <img src="./img/first_img.jpg" alt="" class="img-overlay__image" />
+                <img 
+                srcset=" img/team_member_1-min.jpg 380w, img/team_member_1@2x-min.jpg 760w"
+                sizes="380px"
+                src="./img/team_member_1-min.jpg"
+                alt="" 
+                class="img-overlay__image" />
                 <div class="overlay">
                   <ul class="list socials">
                     <li class="socials__item">
                       <a href="#" class="socials__link">
                         <svg class="socials__icon">
-                          <use href="">
+                          <use href="./icons/social_icons/social_sprite.svg#facebook">
                           
                           </use>
                         </svg>
@@ -94,7 +99,7 @@
                     <li class="socials__item">
                       <a href="#" class="socials__link">
                         <svg class="socials__icon">
-                          <use href="">
+                          <use href="./icons/social_icons/social_sprite.svg#twitter">
                           
                           </use>
                         </svg>
@@ -103,7 +108,7 @@
                     <li class="socials__item">
                       <a href="#" class="socials__link">
                         <svg class="socials__icon">
-                          <use href="">
+                          <use href="./icons/social_icons/social_sprite.svg#pinterest">
                           
                           </use>
                         </svg>
@@ -112,7 +117,7 @@
                     <li class="socials__item">
                       <a href="#" class="socials__link">
                         <svg class="socials__icon">
-                          <use href="">
+                          <use href="./icons/social_icons/social_sprite.svg#instagram">
                           
                           </use>
                         </svg>
@@ -126,15 +131,21 @@
                 <h4 class="member-information__position">Graphic Design</h4>
               </div>
             </div>
-            <div class="team-member">
-              <div class="img-overlay">
-              <img src="./img/first_img.jpg" alt="" class="img-overlay__image" />
+            
+          <div class="team-member">
+            <div class="img-overlay">
+              <img 
+              srcset=" img/team_member_2-min.jpg 380w, img/team_member_2@2x-min.jpg 760w"
+              sizes="380px"
+              src="./img/team_member_2-min.jpg"
+              alt="" 
+              class="img-overlay__image" />
               <div class="overlay">
                 <ul class="list socials">
                   <li class="socials__item">
                     <a href="#" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="">
+                        <use href="./icons/social_icons/social_sprite.svg#facebook">
                         
                         </use>
                       </svg>
@@ -143,7 +154,7 @@
                   <li class="socials__item">
                     <a href="#" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="">
+                        <use href="./icons/social_icons/social_sprite.svg#twitter">
                         
                         </use>
                       </svg>
@@ -152,7 +163,7 @@
                   <li class="socials__item">
                     <a href="#" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="">
+                        <use href="./icons/social_icons/social_sprite.svg#pinterest">
                         
                         </use>
                       </svg>
@@ -161,29 +172,34 @@
                   <li class="socials__item">
                     <a href="#" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="">
+                        <use href="./icons/social_icons/social_sprite.svg#instagram">
                         
                         </use>
                       </svg>
                     </a>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="member-information">
-              <h3 class="member-information__name">Matthew Dix</h3>
-              <h4 class="member-information__position">Graphic Design</h4>
             </div>
           </div>
-          <div class="team-member">
-            <div class="img-overlay">
-            <img src="./img/first_img.jpg" alt="" class="img-overlay__image" />
+          <div class="member-information">
+            <h3 class="member-information__name">Christopher Campbell</h3>
+            <h4 class="member-information__position">Branding/UX design</h4>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="img-overlay">
+            <img 
+            srcset=" img/team_member_3-min.jpg 380w, img/team_member_3@2x-min.jpg 760w"
+            sizes="380px"
+            src="./img/team_member_3-min.jpg"
+            alt="" 
+            class="img-overlay__image" />
             <div class="overlay">
               <ul class="list socials">
                 <li class="socials__item">
                   <a href="#" class="socials__link">
                     <svg class="socials__icon">
-                      <use href="">
+                      <use href="./icons/social_icons/social_sprite.svg#facebook">
                       
                       </use>
                     </svg>
@@ -192,7 +208,7 @@
                 <li class="socials__item">
                   <a href="#" class="socials__link">
                     <svg class="socials__icon">
-                      <use href="">
+                      <use href="./icons/social_icons/social_sprite.svg#twitter">
                       
                       </use>
                     </svg>
@@ -201,7 +217,7 @@
                 <li class="socials__item">
                   <a href="#" class="socials__link">
                     <svg class="socials__icon">
-                      <use href="">
+                      <use href="./icons/social_icons/social_sprite.svg#pinterest">
                       
                       </use>
                     </svg>
@@ -210,67 +226,18 @@
                 <li class="socials__item">
                   <a href="#" class="socials__link">
                     <svg class="socials__icon">
-                      <use href="">
+                      <use href="./icons/social_icons/social_sprite.svg#instagram">
                       
                       </use>
                     </svg>
                   </a>
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class="member-information">
-            <h3 class="member-information__name">Matthew Dix</h3>
-            <h4 class="member-information__position">Graphic Design</h4>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="img-overlay">
-          <img src="./img/first_img.jpg" alt="" class="img-overlay__image" />
-          <div class="overlay">
-            <ul class="list socials">
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <svg class="socials__icon">
-                    <use href="">
-                    
-                    </use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <svg class="socials__icon">
-                    <use href="">
-                    
-                    </use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <svg class="socials__icon">
-                    <use href="">
-                    
-                    </use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <svg class="socials__icon">
-                    <use href="">
-                    
-                    </use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
         <div class="member-information">
-          <h3 class="member-information__name">Matthew Dix</h3>
-          <h4 class="member-information__position">Graphic Design</h4>
+          <h3 class="member-information__name">Michael Fertig</h3>
+          <h4 class="member-information__position">Developer</h4>
         </div>
       </div>
     </div>
@@ -279,15 +246,15 @@
             <div class="container">
               <div class="footer">
                 <p class="footer__text">
-                  © 2016 MoGo free PSD template by <a href="footer__link">Laaqiq</a>
+                  © 2016 MoGo free PSD template by <a href="#" class="link footer__link">Laaqiq</a>
                 </p>
                 <form action="#" class="footer-form">
                   <input
                     type="email"
                     placeholder="Your Email..."
-                    class="email_form"
+                    class="email-form"
                   />
-                  <button type="button submit" class="footer-form__button">Subcrcibe</button>
+                  <button type="button submit" class="button footer-form__button">Subcrcibe</button>
                 </form>
               </div>
             </div>

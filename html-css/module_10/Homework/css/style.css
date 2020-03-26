@@ -51,7 +51,7 @@
 }
 
 .section-introducing {
-   padding-top: 15px;
+   padding-top: 25px;
    color: var(--intro-main-color);
    font-family: var(--font-main);
 }
@@ -59,13 +59,17 @@
 .site-header {
  display: flex;
  justify-content: space-between;  
- align-items: center;
+ align-items: ;
 }
 
 .site-logo {
    font-size: 30px;
-   line-height: 37px;
    font-weight: 700;
+   transition: color 0.2s linear;
+}
+
+.site-logo:hover {
+   color: var(--stylish-color-yellow);
 }
 
 .site-navigation__list {
@@ -73,23 +77,57 @@
    align-items: center;
 }
 
+.site-navigation__item {
+   font-family: var(--font-main);
+   font-weight: 400;
+   font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.site-navigation__link:hover {
+   transition: color 0.2s linear;
+   color: var(--stylish-color-yellow);
+}
+
+.site-navigation__link--hover {
+   position: relative
+}
+
+.site-navigation__link--hover::after {
+   content: "";
+   position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: 12px;
+  background-color: var(--stylish-color-yellow);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.site-navigation__link--hover:hover::after {
+   opacity: 1;
+}
+
 .site-navigation__item:not(:last-of-type) {
-   margin-right: 30px;
+   margin-right: 50px;
 }
 
 .site-navigation__icon {
    fill: #fff;
+   transition: fill 0.2s linear;
 }
 
-.site-navigation__link--hover:hover .site-navigation__icon {
+.site-navigation__link:hover .site-navigation__icon {
    fill: var(--stylish-color-yellow);
 }
 
 .section-title {
-      width: 818px;
-      margin: 0 auto;
-      margin-top: 182px;
-      text-align: center;
+   width: 818px;
+   margin: 0 auto;
+   margin-top: 182px;
+   text-align: center;
 }
 
 .section-title-main__text--main {
@@ -276,4 +314,145 @@
 
 .team_description {
    margin-top: 44px;
+}
+
+.all-team {
+   margin-top: 90px;
+   display: flex;
+   justify-content: space-between;
+}
+ 
+.member-information {
+   text-align: center;
+}
+
+.member-information__name {
+   font-size: 14px;
+   line-height: 17px;
+   font-weight: 500;
+   color: var(--color-main);
+   font-family: var(--font-main);
+   text-transform: uppercase;
+   margin-top: 30px;
+}
+
+.member-information__position {
+   font-style: italic;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 24px;
+   font-family: var(--description-font);
+   color: var(--description-color);
+}
+
+.img-overlay {
+   display: flex;
+   position: relative;
+   transition: transform 0.2s linear, box-shadow 0.2s linear
+}
+
+.overlay {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(var(--gradient));
+  transition: opacity 0.2s linear;;
+}
+
+.img-overlay:hover >.overlay {
+   opacity: 1;
+}
+
+.img-overlay:hover {
+   transform: translate(-10px, -10px);
+   box-shadow: 10px 10px 0 var(--stylish-color-cyan);
+}
+
+.socials {
+   display: flex;
+}
+
+.socials__link {
+   display: block;
+  background-color: var(--stylish-color-yellow);
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  fill: var(--stylish-color-red);
+  transition: fill 0.2s linear;
+}
+
+.socials__icon:hover {
+   fill: var(--intro-main-color);
+ }
+
+.footer {
+   margin-top: 84px;
+   height: 62px;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+   border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer__text {
+   font-size: 14px;
+line-height: 17px;
+font-family: var(--font-main);
+font-weight: 400;
+color: var(--color-main);
+}
+
+.footer__link {
+   color: var(--stylish-color-red);
+   text-decoration: none ;
+}
+
+.footer-form{
+   display: flex;
+}
+
+.email-form {
+   width: 233px;
+   height: 41px;
+   border: 1px solid #E7E7E7;
+   padding-left: 10px;
+}
+
+.email-form::placeholder {
+   font-family: var(--description-font);
+   font-style: italic;
+font-weight: 300;
+font-size: 15px;
+line-height: 24px;
+color: #CCCCCC;
+
+}
+
+.footer-form__button {
+width: 152px;
+height: 43px;
+font-size: 14px;
+line-height: 17px;
+font-family: var(--font-main);
+font-weight: 700;
+color: var(--intro-main-color);
+background-color: var(--stylish-color-cyan);
 }
