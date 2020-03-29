@@ -1,10 +1,10 @@
 .section-background-image {
    height: $container-width - 200;
-   background: linear-gradient($gradient), url('../../images/slider_bg_image-min.jpg');
+   background: linear-gradient($gradient), url('../images/slider_bg_image-min.jpg');
    background-repeat: no-repeat;
    background-size: cover;
 
    @media (min-resolution:192dpi), (min-resolution:2dppx) {
-         background: linear-gradient($gradient), url("../../images/slider_bg_image@2x-min.jpg")
+         background: linear-gradient($gradient), url("../images/slider_bg_image@2x-min.jpg")
       }
 }
