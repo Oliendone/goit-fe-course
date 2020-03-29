@@ -1,0 +1,12 @@
+@mixin servise-icon ($icon){
+   display: block;
+   content: "";
+   width: 30px;
+   height: 30px;
+   background-image: $icon;
+   background-repeat: no-repeat;
+   background-position: center;
+   position: absolute;
+   left: 0;
+   top: 0;
+ }

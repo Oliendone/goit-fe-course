@@ -1,0 +1,35 @@
+.section-title {
+   width: 818px;
+   margin: 0 auto;
+   margin-top: 182px;
+   text-align: center;
+}
+
+.section-title-main__text--main {
+   font-family: $font-main;
+   font-size: 150px;
+   line-height: 140px;
+   text-transform: uppercase;
+   display: block;
+   margin-top: 12px;
+}
+
+.section-title-main__text--pre {
+   font-family: $cursive-font;
+   font-size: 72px;
+   line-height: 104px;
+}
+
+.section-title__button {
+   @extend %button;
+   margin-top: 55px;
+   width: 163px;
+   height: 43px;
+   background: none;
+   border: 3px solid $intro-main-color;
+   color: $intro-main-color;
+   font-size: $basic-font-size;
+   line-height: $basic-line-height;
+   font-family: $font-main;
+   text-transform: uppercase;
+}

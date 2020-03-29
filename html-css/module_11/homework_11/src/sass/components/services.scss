@@ -1,0 +1,43 @@
+
+
+.services__list {
+   @extend %list;
+   margin-top: 63px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.services__item {
+   flex-basis: 26%;
+   padding-left: 45px;
+   position: relative;
+
+   &:nth-last-of-type(-n+3) {
+      margin-top: 80px;
+   }
+
+   &--clock:before {
+      @include servise-icon(url('../../images/icons/services_icons/clock.svg'));
+   }
+
+   &--graph:before {
+      @include servise-icon(url('../../images/icons/services_icons/graph.svg'));
+   }
+
+   &--desktop:before {
+      @include servise-icon(url('../../images/icons/services_icons/desktop.svg'));
+   }
+
+   &--book:before{
+      @include servise-icon(url('../../images/icons/services_icons/book.svg'));
+   }
+
+   &--home:before {
+      @include servise-icon(url('../../images/icons/services_icons/home.svg'));
+   }
+
+   &--square:before {
+      @include servise-icon(url('../../images/icons/services_icons/square.svg'));
+   }
+}

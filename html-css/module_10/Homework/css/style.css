@@ -50,6 +50,7 @@
    background-size: cover;
 }
 
+
 .section-introducing {
    padding-top: 25px;
    color: var(--intro-main-color);
@@ -59,7 +60,7 @@
 .site-header {
  display: flex;
  justify-content: space-between;  
- align-items: ;
+ 
 }
 
 .site-logo {
@@ -71,6 +72,8 @@
 .site-logo:hover {
    color: var(--stylish-color-yellow);
 }
+
+
 
 .site-navigation__list {
    display: flex;
@@ -122,6 +125,8 @@
 .site-navigation__link:hover .site-navigation__icon {
    fill: var(--stylish-color-yellow);
 }
+
+
 
 .section-title {
    width: 818px;

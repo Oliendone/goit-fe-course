@@ -1,0 +1,58 @@
+.footer {
+   margin-top: 84px;
+   height: 62px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer__text {
+   font-size: $basic-font-size;
+   line-height: $basic-line-height;
+   font-family: $font-main;
+   font-weight: 400;
+   color: $color-main;
+}
+
+.footer__link {
+   @extend %link;
+   color: $stylish-color-red;
+   text-decoration: none ;
+}
+
+.footer-form{
+   display: flex;
+}
+
+.email-form {
+   width: 233px;
+   height: 41px;
+   border: 1px solid #E7E7E7;
+   padding-left: 10px;
+
+   &::placeholder {
+      font-family: $description-font;
+      font-style: italic;
+      font-weight: 300;
+      font-size: $desc-font-size;
+      line-height: $desc-line-height;
+      color: $form-placeholder-color;
+      
+   }
+
+}
+
+
+.footer-form__button {
+   @extend %button;
+   width: 152px;
+   height: 43px;
+   font-size: $basic-font-size;
+   line-height: $basic-line-height;
+   font-family: $font-main;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: $intro-main-color;
+   background-color: $stylish-color-cyan;
+}

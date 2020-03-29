@@ -1,0 +1,16 @@
+%button {
+   border: none;
+   cursor: pointer;
+}
+
+%list {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
+%link {
+   text-decoration: none;
+   color: $intro-main-color;
+}
+

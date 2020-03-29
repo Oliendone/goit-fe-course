@@ -1,0 +1,11 @@
+.site-logo {
+   @extend %link;
+   font-size: 30px;
+   font-weight: 700;
+   transition: $transition-color;
+
+   &:hover {
+      color: $stylish-color-yellow;
+   }
+}
+

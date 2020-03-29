@@ -1,0 +1,29 @@
+.socials {
+  @extend %list;
+   display: flex;
+}
+
+.socials__link {
+   display: block;
+  background-color: $stylish-color-yellow;
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  fill: $stylish-color-red;
+  transition: $transition-fill;
+
+  &:hover {
+   fill: $intro-main-color;
+  }
+}
