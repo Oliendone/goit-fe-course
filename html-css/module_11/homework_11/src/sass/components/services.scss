@@ -18,26 +18,26 @@
    }
 
    &--clock:before {
-      @include servise-icon(url('../../images/icons/services_icons/clock.svg#clock'));
+      @include servise-icon(url('/images/icons/services_icons/clock.svg'));
    }
 
    &--graph:before {
-      @include servise-icon(url('../../images/icons/services_icons/graph.svg#graph'));
+      @include servise-icon(url('/images/icons/services_icons/graph.svg'));
    }
 
    &--desktop:before {
-      @include servise-icon(url('../../images/icons/services_icons/desktop.svg#desktop'));
+      @include servise-icon(url('/images/icons/services_icons/desktop.svg'));
    }
 
    &--book:before{
-      @include servise-icon(url('../../images/icons/services_icons/book.svg#book'));
+      @include servise-icon(url('/images/icons/services_icons/book.svg'));
    }
 
    &--home:before {
-      @include servise-icon(url('../../images/icons/services_icons/home.svg#home'));
+      @include servise-icon(url('/images/icons/services_icons/home.svg'));
    }
 
    &--square:before {
-      @include servise-icon(url('../../images/icons/services_icons/square.svg#square'));
+      @include servise-icon(url('/images/icons/services_icons/square.svg'));
    }
 }
