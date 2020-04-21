@@ -68,7 +68,10 @@ let input;
 let total = 0;
 do {
   input = prompt('Введите любое число');
-  if (input === null) {
+  if (Number.isNaN(input)) {
+    alert('Вы ввели не число!');
+    break;
+  } else if (input === null) {
     break;
   }
   input = Number(input);
