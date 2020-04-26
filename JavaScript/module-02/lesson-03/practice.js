@@ -122,6 +122,7 @@
 // ========================================
 /* Массивы - split() и join() */
 // ========================================
+// const arr = [1, 4, 5, 3, 2, 7];
 // let message = '';
 // for (let i = 0; i < arr.length; i += 1) {
 //   message += arr[i] + ' ';
@@ -243,3 +244,14 @@
 //   console.log(arr[i]);
 // }
 
+let arr = [1, 4, 2, 5, 3];
+const arrIndex = arr.indexOf(4);
+console.log(arrIndex);
+
+arr.push('Jopa', 'Jeka');
+console.log(arr);
+console.log(arr.slice(3, 5));
+console.log(arr);
+
+arr.splice(2, 2, 'Kaka', 'Paka');
+console.log(arr);
