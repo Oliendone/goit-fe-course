@@ -15,4 +15,5 @@ do {
   numbers.push(input);
   console.log(numbers);
 } while (true);
+console.log(`Общая сумма чисел равна ${total}`);
 alert(`Общая сумма чисел равна ${total}`);
