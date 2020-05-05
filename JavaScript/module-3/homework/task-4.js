@@ -3,7 +3,7 @@ console.log('~4~');
 const countTotalSalary = function(employees) {
   const salaries = Object.values(employees);
   let allSalary = 0;
-  for (salary of salaries) {
+  for (const salary of salaries) {
     allSalary += salary;
   }
   return `Сумма всех зарплат: ${allSalary}`;
