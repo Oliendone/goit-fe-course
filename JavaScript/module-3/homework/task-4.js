@@ -1,29 +1,31 @@
 console.log('~4~');
 
-const formatString = function(string) {
-  let text = '';
-  for (let i = 0; i < string.length; i += 1) {
-    if (i <= 40 - 1) {
-      text += string[i];
-    } else {
-      text += '...';
-      break;
-    }
+const countTotalSalary = function(employees) {
+  const salaries = Object.values(employees);
+  let allSalary = 0;
+  for (salary of salaries) {
+    allSalary += salary;
   }
-  return text;
+  return `Сумма всех зарплат: ${allSalary}`;
 };
 
-console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
-// вернется оригинальная строка
-
-console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
-// вернется форматированная строка
-
-console.log(formatString('Curabitur ligula sapien.'));
-// вернется оригинальная строка
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(countTotalSalary({})); // 0
 
 console.log(
-  formatString(
-    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-  ),
-);
+  countTotalSalary({
+    mango: 100,
+    poly: 150,
+    alfred: 80,
+  }),
+); // 330
+
+console.log(
+  countTotalSalary({
+    kiwi: 200,
+    lux: 50,
+    chelsy: 150,
+  }),
+); // 400
