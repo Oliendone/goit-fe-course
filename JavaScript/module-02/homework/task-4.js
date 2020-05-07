@@ -1,14 +1,9 @@
 console.log('~4~');
 
 const formatString = function(string) {
-  let text = '';
-  for (let i = 0; i < string.length; i += 1) {
-    if (i <= 40 - 1) {
-      text += string[i];
-    } else {
-      text += '...';
-      break;
-    }
+  let text = string.slice(0, 41);
+  if (text.length >= 40) {
+    return `${text}...`;
   }
   return text;
 };
