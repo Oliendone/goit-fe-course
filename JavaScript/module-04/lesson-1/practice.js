@@ -1,25 +1,15 @@
-const account = {
-  owner: 'Mango',
-  balance: 24000,
-  discount: 0.1,
-  orders: ['order-1', 'order-2', 'order-3'],
-  changeDiscount(value) {
-    this.discount = value;
-  },
-  showOrders() {
-    return this.orders;
-  },
-  addOrder(cost, order) {
-    this.balance -= cost;
-    this.orders.push(order);
-  },
+const makePackage = function() {
+  const takeProduct = function(product) {
+    console.log(this);
+    this.product = product;
+  };
+
+  return takeProduct;
 };
 
-account.changeDiscount(0.15);
-console.log(account.discount); // 0.15
+const bag = {
+  product: 'Fish',
+  takeProduct: makePackage(),
+};
 
-console.table(account.showOrders()); // ['order-1', 'order-2', 'order-3']
-
-account.addOrder(5000, 'order-4');
-console.log(account.balance); // 19000
-console.table(account.showOrders()); // ['order-1', 'order-2', 'order-3', 'order-4']
+bag.takeProduct('meat');
