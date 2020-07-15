@@ -247,7 +247,7 @@ console.log(mustang.price); // 4000class Car {
   }
 
   drive(hours) {
-    if (this.isOn === true) {
+    if (this.isOn) {
       this.distance += hours * this.speed
     }
   }
