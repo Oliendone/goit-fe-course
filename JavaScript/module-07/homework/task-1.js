@@ -1,11 +1,24 @@
-const categoriesRef = document.querySelectorAll('#categories>li');
+// const listRef = document.querySelectorAll('#categories>li');
+// const categories = [...listRef];
 
-const categories = [...categoriesRef];
+// let num = 0;
+// const categoriesNum = categories.forEach(category => {
+//   num += 1;
+// });
+// console.log(`В списке ${num} категории.`);
 
-let num = 0;
+const categoriesRef = document.querySelectorAll('.item');
+const categoriesName = [...categoriesRef];
 
-const categoriesNum = categories.forEach(category => {
-  num += 1;
-});
-
-console.log(`В списке ${num} категории.`);
+function getCategoryInfo(category) {
+  const name = category.querySelector('h2');
+  const nameText = name.textContent;
+  const elements = category.querySelectorAll('li');
+  let num = 0;
+  elements.forEach(element => {
+    num += 1;
+  });
+  return `Категория: ${nameText} 
+Количество элементов: ${num}`;
+}
+console.log(getCategoryInfo(categoriesName[2]));
