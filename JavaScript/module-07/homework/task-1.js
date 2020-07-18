@@ -1,11 +1,11 @@
-// const listRef = document.querySelectorAll('#categories>li');
-// const categories = [...listRef];
+const listRef = document.querySelectorAll('#categories>li');
+const categories = [...listRef];
 
-// let num = 0;
-// const categoriesNum = categories.forEach(category => {
-//   num += 1;
-// });
-// console.log(`В списке ${num} категории.`);
+let num = 0;
+const categoriesNum = categories.forEach(category => {
+  num += 1;
+});
+console.log(`В списке ${num} категории.`);
 
 const categoriesRef = document.querySelectorAll('.item');
 const categoriesName = [...categoriesRef];
@@ -21,4 +21,6 @@ function getCategoryInfo(category) {
   return `Категория: ${nameText} 
 Количество элементов: ${num}`;
 }
+console.log(getCategoryInfo(categoriesName[0]));
+console.log(getCategoryInfo(categoriesName[1]));
 console.log(getCategoryInfo(categoriesName[2]));

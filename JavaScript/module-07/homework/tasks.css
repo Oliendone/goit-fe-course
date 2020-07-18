@@ -1,0 +1,30 @@
+#gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-element {
+  list-style-type: none;
+  box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.list-element__image {
+  width: 400px;
+}
+
+.tasks {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
