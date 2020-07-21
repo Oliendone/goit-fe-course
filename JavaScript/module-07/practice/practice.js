@@ -102,3 +102,21 @@ const addPictures = images
   .join('');
 
 galleryRef.insertAdjacentHTML('afterbegin', addPictures);
+
+// ===================
+
+const wrapperRef = document.querySelector('#wrapper');
+const innerRef = document.querySelector('#inner');
+
+const funcClick = () => {
+  console.log(event.target);
+};
+
+wrapperRef.addEventListener('click', funcClick);
+// ====================
+window.addEventListener(
+  'scroll',
+  _.throttle(() => {
+    console.log('Scroll event handler invocation every 300ms.');
+  }, 300),
+);
