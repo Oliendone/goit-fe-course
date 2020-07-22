@@ -8,7 +8,7 @@ const imageRef = lightboxRef.querySelector('img');
 const buttonCloseRef = document.querySelector(
   'button[data-action="close-lightbox"]',
 );
-const overlayRef = lightboxRef.querySelector('.lightbox__overlay');
+const overlayRef = document.querySelector('.lightbox__content');
 
 // ===============build list of images=============
 
@@ -37,29 +37,37 @@ const addPictures = images => {
 addPictures(gallery);
 
 // =============functions================
-
-const openModal = event => {
-  const imageUrl = event.target.dataset.source;
-  event.preventDefault();
-  if (event.target.nodeName === 'IMG') {
-    console.log(event.target.src);
-    imageRef.setAttribute('src', imageUrl);
-    lightboxRef.classList.add('is-open');
+const closeModalEsc = () => {
+  if (event.code === 'Escape') {
+    closeModal();
   }
 };
 
-const closeModal = event => {
+const openModal = event => {
+  window.addEventListener('keydown', closeModalEsc);
+  const imageUrl = event.target.dataset.source;
+  event.preventDefault();
+  if (event.target.nodeName !== 'IMG') {
+    return;
+  }
+  imageRef.setAttribute('src', imageUrl);
+  lightboxRef.classList.add('is-open');
+};
+
+const closeModal = () => {
+  window.removeEventListener('keydown', closeModalEsc);
   lightboxRef.classList.remove('is-open');
   imageRef.setAttribute('src', '');
 };
 
-const overlayClose = event => {
-  console.log(event.target);
-  console.log(event.currentTarget);
+const overlayClickClose = event => {
+  if (event.target === event.currentTarget) {
+    closeModal();
+  }
 };
 
 // ==================listeners===================
 
 galleryRef.addEventListener('click', openModal);
 buttonCloseRef.addEventListener('click', closeModal);
-overlayRef.addEventListener('click', overlayClose);
+overlayRef.addEventListener('click', overlayClickClose);
