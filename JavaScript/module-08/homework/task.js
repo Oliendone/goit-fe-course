@@ -1,7 +1,16 @@
 import gallery from './gallery.js';
 
+// ==============select elements=============
+
 const galleryRef = document.querySelector('.js-gallery');
 const lightboxRef = document.querySelector('.js-lightbox');
+const imageRef = lightboxRef.querySelector('img');
+const buttonCloseRef = document.querySelector(
+  'button[data-action="close-lightbox"]',
+);
+const overlayRef = lightboxRef.querySelector('.lightbox__overlay');
+
+// ===============build list of images=============
 
 const addPictures = images => {
   const pictureElements = images
@@ -27,8 +36,9 @@ const addPictures = images => {
 
 addPictures(gallery);
 
+// =============functions================
+
 const openModal = event => {
-  const imageRef = lightboxRef.querySelector('img');
   const imageUrl = event.target.dataset.source;
   event.preventDefault();
   if (event.target.nodeName === 'IMG') {
@@ -38,4 +48,18 @@ const openModal = event => {
   }
 };
 
+const closeModal = event => {
+  lightboxRef.classList.remove('is-open');
+  imageRef.setAttribute('src', '');
+};
+
+const overlayClose = event => {
+  console.log(event.target);
+  console.log(event.currentTarget);
+};
+
+// ==================listeners===================
+
 galleryRef.addEventListener('click', openModal);
+buttonCloseRef.addEventListener('click', closeModal);
+overlayRef.addEventListener('click', overlayClose);
