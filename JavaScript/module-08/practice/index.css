@@ -1,0 +1,17 @@
+.box-teal {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+}
+
+.box-red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.box-blue {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}

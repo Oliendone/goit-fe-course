@@ -41,23 +41,16 @@ addPictures(gallery);
 let imageIndex;
 
 const functionalKeys = event => {
-  let arrayLength = gallery.length;
   let arrayElement;
   if (event.code === 'Escape') {
     closeModal();
   }
   if (event.code === 'ArrowRight') {
-    // if (arrayElement === arrayLength) {
-    //   arrayElement = gallery.find(image => Number(image.index) === 0);
-    //   console.log(arrayElement);
-    //   imageRef.setAttribute('src', arrayElement.original);
-    // }
     arrayElement = gallery.find(
       image => Number(image.index) === imageIndex + 1,
     );
     imageRef.setAttribute('src', arrayElement.original);
     imageIndex += 1;
-    console.log(arrayLength);
   }
   if (event.code === 'ArrowLeft') {
     arrayElement = gallery.find(
