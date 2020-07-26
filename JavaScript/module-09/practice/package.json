@@ -1,0 +1,16 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "main": "practice.js",
+  "scripts": {
+    "start": "node practice.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nikita Lavrenyuk <Zungarcheg@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "validator": "^13.1.1"
+  }
+}
